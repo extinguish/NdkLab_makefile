@@ -11,11 +11,28 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+    // let the gradle build system ignore the native file
+    sourceSets.main {
+        jniLibs.srcDirs 'src/main/libs'
+        jni.srcDirs = []
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+
+    // create the custom ndk-build task
+    task ndkBuild(type : Exec) {
+        commandLine 'ndk-build', '-C', file('src/main').absolutePath
+    }
+
+    // the final APK build task are depends on the ndkBuild task
+    tasks.withType(JavaCompile) {
+        compileTask -> compileTask.dependsOn ndkBuild
     }
 }
 
@@ -27,3 +44,33 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.0.0'
     testCompile 'junit:junit:4.12'
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
