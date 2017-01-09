@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Fuck" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hello"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello" />
+
+        <Button
+            android:id="@+id/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Android" />
+
+        <Button
+            android:id="@+id/sawtooth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Sawtooth" />
+
+        <Button
+            android:id="@+id/embedded_soundtrack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Embedded\nsoundtrack" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/reverb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Reverb" />
+
+        <Button
+            android:id="@+id/mute_uri"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Mute" />
+
+        <Button
+            android:id="@+id/enable_stereo_position_uri"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable SP" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/uri_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="URI spinner" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/uri_soundtrack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="URI\nsoundtrack" />
+
+        <Button
+            android:id="@+id/pause_uri"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Pause\nURI" />
+
+        <Button
+            android:id="@+id/play_uri"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Play\nURI" />
+
+        <Button
+            android:id="@+id/loop_uri"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Loop\nURI" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mute_left_uri"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="mute left" />
+
+        <Button
+            android:id="@+id/mute_right_uri"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="mute right" />
+
+        <Button
+            android:id="@+id/solo_left_uri"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="solo left" />
+
+        <Button
+            android:id="@+id/solo_right_uri"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="solo right" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/channels_uri"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Get channels" />
+
+    <SeekBar
+        android:id="@+id/volume_uri"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Volume" />
+
+    <SeekBar
+        android:id="@+id/pan_uri"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Pan" />
+
+    <Button
+        android:id="@+id/record"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Record" />
+
+    <Button
+        android:id="@+id/playback"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Playback" />
+</LinearLayout>

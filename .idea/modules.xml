@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/NDKLab.iml" filepath="$PROJECT_DIR$/NDKLab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NdkLab_makefile.iml" filepath="$PROJECT_DIR$/NdkLab_makefile.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nativeaudioprocess/nativeaudioprocess.iml" filepath="$PROJECT_DIR$/nativeaudioprocess/nativeaudioprocess.iml" />
+      <module fileurl="file://$PROJECT_DIR$/twolibslab/twolibslab.iml" filepath="$PROJECT_DIR$/twolibslab/twolibslab.iml" />
     </modules>
   </component>
 </project>
